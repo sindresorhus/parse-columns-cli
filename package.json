@@ -1,0 +1,57 @@
+{
+  "name": "parse-columns-cli",
+  "version": "0.0.0",
+  "description": "Parse text columns, like the output of unix commands. Returns JSON that you can manipulate with tools like jq or underscore-cli.",
+  "license": "MIT",
+  "repository": "sindresorhus/parse-columns-cli",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "parse-columns": "cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "json",
+    "jq",
+    "underscore",
+    "parse",
+    "parser",
+    "columns",
+    "column",
+    "col",
+    "row",
+    "text",
+    "string",
+    "str",
+    "unix",
+    "command",
+    "cmd",
+    "output",
+    "csv",
+    "shell",
+    "sh",
+    "term",
+    "table"
+  ],
+  "dependencies": {
+    "get-stdin": "^4.0.1",
+    "meow": "^3.3.0",
+    "parse-columns": "^1.1.0"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
