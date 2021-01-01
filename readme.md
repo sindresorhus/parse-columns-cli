@@ -1,4 +1,4 @@
-# parse-columns-cli [![Build Status](https://travis-ci.org/sindresorhus/parse-columns-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/parse-columns-cli)
+# parse-columns-cli
 
 > Parse text columns, like the output of unix commands. Returns JSON that you can manipulate with tools like [jq](https://github.com/stedolan/jq) or [underscore-cli](https://github.com/ddopson/underscore-cli).
 
