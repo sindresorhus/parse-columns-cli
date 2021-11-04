@@ -2,13 +2,11 @@
 
 > Parse text columns, like the output of unix commands. Returns JSON that you can manipulate with tools like [jq](https://github.com/stedolan/jq) or [underscore-cli](https://github.com/ddopson/underscore-cli).
 
-
 ## Install
 
+```sh
+npm install --global parse-columns-cli
 ```
-$ npm install --global parse-columns-cli
-```
-
 
 ## Usage
 
@@ -27,12 +25,6 @@ $ parse-columns --help
     localhost:9050 (LISTEN)
 ```
 
-
 ## Related
 
 - [parse-columns](https://github.com/sindresorhus/parse-columns) - API for this module
-
-
-## License
-
-MIT © [Sindre Sorhus](http://sindresorhus.com)

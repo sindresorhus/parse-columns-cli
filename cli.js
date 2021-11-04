@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-'use strict';
-const getStdin = require('get-stdin');
-const meow = require('meow');
-const parseColumns = require('parse-columns');
+import process from 'node:process';
+import getStdin from 'get-stdin';
+import meow from 'meow';
+import parseColumns from 'parse-columns';
 
 const cli = meow(`
 	Usage
@@ -15,7 +15,9 @@ const cli = meow(`
 	  *:62886
 	  *:*
 	  localhost:9050 (LISTEN)
-`);
+`, {
+	importMeta: import.meta,
+});
 
 const input = cli.input[0];
 
@@ -28,8 +30,10 @@ if (!input && process.stdin.isTTY) {
 	process.exit(2);
 }
 
-if (input) {
-	init(input);
-} else {
-	getStdin().then(init);
-}
+(async () => {
+	if (input) {
+		init(input);
+	} else {
+		init(await getStdin());
+	}
+})();
